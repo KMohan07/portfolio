@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Kuruva Mohan - Software Developer, Python & Quantum Computing Enthusiast.">
+        <title>Kuruva Mohan | Software Developer</title>
+        
+        <link rel="stylesheet" href="style.css?v=2">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="custom-cursor"></div>
+        <div id="cursor-glow"></div>
+        <div class="theme-switch">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+        <!-- Quantum Canvas from original Kuruva Mohan Site -->
+        <canvas id="quantum-canvas"></canvas>
+
+        <header class="header glass-effect">
+            <div class="profile-container">
+                <!-- Placeholder Profile Image -->
+                <div id="img1" style="background-color: var(--highlight-bg); display:flex; align-items:center; justify-content:center; color: var(--accent-color); font-size: 3rem; font-weight: bold; border-radius: 50%; width: 250px; height: 250px; border: 5px solid var(--accent-color);">
+                    KM
+                </div>
+                <div class="header-content">
+                    <div id="terminal-container" class="terminal-text" style="min-height: 80px; margin-bottom: 20px; font-family: var(--font-mono); color: var(--accent-green); font-size: 1.2rem;"></div>
+                    <h1 class="gradient-text glitch-hover" data-text="Kuruva Mohan" id="hero-name" style="opacity: 0; transform: translateY(20px); transition: all 0.5s ease;">Kuruva Mohan</h1>
+                    <h3 class="subtitle glitch-hover" data-text="Software Developer" id="hero-subtitle" style="opacity: 0; transform: translateY(20px); transition: all 0.5s ease 0.2s;">Software Developer</h3>
+                    <div class="highlights" id="hero-highlights" style="opacity: 0; transform: translateY(20px); transition: all 0.5s ease 0.4s;">
+                        <span class="highlight-badge glow float-1">Python</span>
+                        <span class="highlight-badge glow float-2">Quantum Computing</span>
+                        <span class="highlight-badge glow float-3">B.Tech ECE</span>
+                        <span class="highlight-badge glow float-4">Hackathon Winner</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="container">
+                <section class="section about-section glass-effect float-element">
+                    <h2 class="section-title glitch-hover" data-text="ABOUT ME">ABOUT ME</h2>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p class="about-intro">Hello! I'm <span class="highlight-text">Kuruva Mohan</span> 👋</p>
+                            <p class="about-description">
+                                A final-year Electronics and Communication Engineering student with strong programming skills in <strong>Python</strong>, <strong>C</strong>, and <strong>JavaScript</strong>. I am passionate about building end-to-end software systems and exploring the frontiers of <strong>Quantum Computing</strong>. My projects blend classical software development with quantum protocols to forge robust cybersecurity solutions.
+                            </p>
+                            <div class="about-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">🥇</span>
+                                    <span class="highlight-info">1st Prize - Quantum Valley Hackathon (₹50k)</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">📜</span>
+                                    <span class="highlight-info">Provisional Indian Patent Filed</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">👨‍💻</span>
+                                    <span class="highlight-info">Python Backend & IoT Systems</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-icon">👥</span>
+                                    <span class="highlight-info">Leadership: Class Representative</span>
+                                </div>
+                            </div>
+                            <div class="about-quote">
+                                "Bridging Electronics, Quantum Protocols & Backend Engineering."
+                            </div>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Major Projects</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1st</span>
+                                <span class="stat-label">Hackathon Prize Placeholder</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section experience-section glass-effect float-element">
+                    <h2 class="section-title glitch-hover" data-text="PROJECT TIMELINE">PROJECT TIMELINE</h2>
+                    <div class="experience-timeline">
+                        <div class="experience-card">
+                            <div class="exp-year">Aug 2025 – Feb 2026</div>
+                            <h3>Quantum Shield – Quantum-Safe Cryptographic System</h3>
+                            <div class="exp-session">Python, Qiskit, QuTiP, AES-256-GCM</div>
+                            <div class="exp-description">
+                                Designed and developed a full-stack cryptographic software system integrating Quantum Random Number Generator (QRNG), E91 Quantum Key Distribution (QKD), and AES-256-GCM encryption. Eliminated pseudo-random vulnerabilities found in classical systems. Won 1st Prize at Amaravati Quantum Valley Hackathon and filed a Provisional Indian Patent.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title glitch-hover" data-text="EDUCATION & LEADERSHIP">EDUCATION & LEADERSHIP</h2>
+                    <div class="education-timeline">
+                        <div class="education-card">
+                            <div class="edu-year">2022 - 2026</div>
+                            <h3>B.Tech – Electronics and Communication Engineering (ECE)</h3>
+                            <p>Sri Krishnadevaraya University College of Engineering and Technology</p>
+                            <div class="edu-highlights">Score: 76% | Designation: Head Boy & Class Representative (Led 70+ students)</div>
+                        </div>
+                        <div class="education-card">
+                            <div class="edu-year">Dec 2025 - Jan 2026</div>
+                            <h3>Certified Quantum Fundamentals</h3>
+                            <p>WISER</p>
+                            <div class="edu-highlights">Completed Quantum Computing Workshop at IIT Tirupati</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title glitch-hover" data-text="TECHNICAL EXPERTISE">TECHNICAL EXPERTISE</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Programming Languages</h3>
+                            <div class="skill-item">
+                                <span>Python</span>
+                                <div class="skill-bar" style="--width: 95%"></div>
+                            </div>
+                            <div class="skill-item">
+                                <span>JavaScript / HTML / CSS</span>
+                                <div class="skill-bar" style="--width: 80%"></div>
+                            </div>
+                            <div class="skill-item">
+                                <span>C</span>
+                                <div class="skill-bar" style="--width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Quantum & Libraries</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Quantum Algorithms</span>
+                                <span class="skill-tag">Qiskit</span>
+                                <span class="skill-tag">QuTiP</span>
+                                <span class="skill-tag">NumPy</span>
+                                <span class="skill-tag">SciPy</span>
+                            </div>
+                            <h3 style="margin-top: 20px;">Tools & Hardware</h3>
+                            <div class="skill-tags" style="margin-top: 10px;">
+                                <span class="skill-tag">Git / GitHub</span>
+                                <span class="skill-tag">Raspberry Pi</span>
+                                <span class="skill-tag">Oracle SQL</span>
+                                <span class="skill-tag">MATLAB</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section projects-section glass-effect float-element">
+                    <h2 class="section-title glitch-hover" data-text="FEATURED PROJECTS PORTFOLIO">FEATURED PROJECTS PORTFOLIO</h2>
+                    <div class="project-carousel-container">
+                        <button class="scroll-btn" id="scrollLeft">&lt; Prev</button>
+                        <div class="project-grid">
+                            <div class="project-card">
+                                <h3>Quantum Shield Cryptography</h3>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">Qiskit</span>
+                                    <span class="tech-badge">AES-256-GCM</span>
+                                </div>
+                                <p class="section-content">
+                                    A full-stack cryptographic software integrating QRNG, E91 QKD, and AES encryption to eliminate vulnerabilities in classical RNGs.
+                                </p>
+                                <div class="project-link">
+                                    <a href="#" target="_blank" class="github-link">
+                                        <span>Patent Application: E-1/03619-2025-CHE</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <h3>QKD Protocol Simulator</h3>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">QuTiP</span>
+                                    <span class="tech-badge">Data Analysis</span>
+                                    <span class="tech-badge">BB84 / E91</span>
+                                </div>
+                                <p class="section-content">
+                                    Built a simulation tool automating experiment control and QBER analysis, achieving 97%+ eavesdropping detection accuracy.
+                                </p>
+                            </div>
+                            <div class="project-card">
+                                <h3>Smart IoT Dashboard</h3>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Raspberry Pi</span>
+                                    <span class="tech-badge">IoT</span>
+                                    <span class="tech-badge">Web Dev</span>
+                                </div>
+                                <p class="section-content">
+                                    A real-time IoT monitoring pipeline using Raspberry Pi for sensor data collection and a full interactive web-based dashboard.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="scroll-btn" id="scrollRight">Next &gt;</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer glass-effect" id="foot">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Me</h3>
+                    <p>Kuruva Mohan<br>Sri Krishnadevaraya University</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/KMohan07" target="_blank" style="color: var(--accent-color); font-size: 24px; margin: 0 10px;">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/kuruva-mohan-b09b0738b" target="_blank" style="color: var(--accent-color); font-size: 24px; margin: 0 10px;">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Me</h3>
+                    <p>+91 9949328848<br>kuruvamohan9701@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="script.js?v=2"></script>
+    </body>
+</html>
