@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const lines = [
             "> Initializing Quantum State...",
             "> Importing qiskit, qrng, aes_gcm_cipher...",
-            "> Running BB84 Protocol Simulation...",
+            "> Running E91 Protocol Simulation...",
             "> Profile decrypted successfully."
         ];
         
